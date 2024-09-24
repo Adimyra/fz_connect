@@ -1,0 +1,100 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:PAY-{date}-{##}",
+ "creation": "2024-09-22 00:40:25.209852",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "payout_to_mahajan_section",
+  "date",
+  "daily_wise",
+  "week_wise",
+  "column_break_nule",
+  "amount_pay",
+  "mode_of_payment",
+  "amount_received_by"
+ ],
+ "fields": [
+  {
+   "fieldname": "payout_to_mahajan_section",
+   "fieldtype": "Section Break",
+   "label": "Payout to Mahajan"
+  },
+  {
+   "default": "Today",
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Date"
+  },
+  {
+   "fieldname": "daily_wise",
+   "fieldtype": "Link",
+   "label": "Daily wise",
+   "options": "Daily Ticket Details"
+  },
+  {
+   "fieldname": "week_wise",
+   "fieldtype": "Data",
+   "label": "Week wise"
+  },
+  {
+   "fieldname": "column_break_nule",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "amount_pay",
+   "fieldtype": "Currency",
+   "label": "Amount Pay"
+  },
+  {
+   "fieldname": "mode_of_payment",
+   "fieldtype": "Select",
+   "label": "Mode of Payment",
+   "options": "\nCash\nOnline"
+  },
+  {
+   "default": "Mahajan",
+   "fieldname": "amount_received_by",
+   "fieldtype": "Data",
+   "label": "Amount received by"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-09-24 15:35:54.880133",
+ "modified_by": "Administrator",
+ "module": "Fz Connect",
+ "name": "Payout to Mahajan",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Ticket Seller",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

@@ -1,0 +1,54 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-09-21 23:46:03.566138",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "sold_and_unsold_ticket_details_section",
+  "sem",
+  "no_of_sold_ticket",
+  "image"
+ ],
+ "fields": [
+  {
+   "fieldname": "sold_and_unsold_ticket_details_section",
+   "fieldtype": "Section Break",
+   "label": "Sold Ticket Details"
+  },
+  {
+   "fieldname": "sem",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Sem",
+   "options": "\n10\n20\n25\n30\n50\n60",
+   "precision": "0"
+  },
+  {
+   "fieldname": "no_of_sold_ticket",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "No of Sold Ticket",
+   "precision": "0"
+  },
+  {
+   "fieldname": "image",
+   "fieldtype": "Attach",
+   "in_list_view": 1,
+   "label": "Image (if available)"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-09-24 15:35:55.822727",
+ "modified_by": "Administrator",
+ "module": "Fz Connect",
+ "name": "Sold Ticket Details",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

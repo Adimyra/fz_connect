@@ -1,0 +1,135 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:{todays_date}-{time}-{##}",
+ "creation": "2024-09-21 13:45:59.717035",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "daily_ticket_details_section",
+  "todays_date",
+  "time",
+  "column_break_tyvt",
+  "rate_per_tickets",
+  "no_of_tickets_sold",
+  "no_of_tickets_unshold",
+  "sold_ticket_details_section",
+  "sold",
+  "unsold_ticket_details_section",
+  "unsold",
+  "prize_section",
+  "pt_vc"
+ ],
+ "fields": [
+  {
+   "fieldname": "daily_ticket_details_section",
+   "fieldtype": "Section Break",
+   "label": "Daily Ticket Details"
+  },
+  {
+   "default": "Today",
+   "fieldname": "todays_date",
+   "fieldtype": "Date",
+   "label": "Today's Date"
+  },
+  {
+   "fieldname": "time",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Time",
+   "options": "\n1 PM\n6 PM",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_tyvt",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "8.8",
+   "fieldname": "rate_per_tickets",
+   "fieldtype": "Float",
+   "label": "Rate per tickets",
+   "precision": "2"
+  },
+  {
+   "fieldname": "no_of_tickets_sold",
+   "fieldtype": "Float",
+   "label": "No of Tickets Sold"
+  },
+  {
+   "fieldname": "no_of_tickets_unshold",
+   "fieldtype": "Float",
+   "label": "No of Tickets Unshold"
+  },
+  {
+   "fieldname": "sold_ticket_details_section",
+   "fieldtype": "Section Break",
+   "label": "Sold Ticket Details"
+  },
+  {
+   "fieldname": "sold",
+   "fieldtype": "Table",
+   "label": "Sold",
+   "options": "Sold Ticket Details"
+  },
+  {
+   "fieldname": "unsold_ticket_details_section",
+   "fieldtype": "Section Break",
+   "label": "Unsold Ticket Details"
+  },
+  {
+   "fieldname": "unsold",
+   "fieldtype": "Table",
+   "label": "Unsold",
+   "options": "Unsold Ticket Details"
+  },
+  {
+   "fieldname": "prize_section",
+   "fieldtype": "Section Break",
+   "label": "PRIZE"
+  },
+  {
+   "fieldname": "pt_vc",
+   "fieldtype": "Table",
+   "label": "PT VC",
+   "options": "Prize PT VC"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-09-24 15:35:55.270575",
+ "modified_by": "Administrator",
+ "module": "Fz Connect",
+ "name": "Daily Ticket Details",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Ticket Seller",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

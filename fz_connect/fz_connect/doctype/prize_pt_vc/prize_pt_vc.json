@@ -1,0 +1,61 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-09-22 00:05:27.297510",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "prize_pt_and_vc_section",
+  "prize_amount_pt",
+  "voucher_amount",
+  "ticket_number",
+  "date"
+ ],
+ "fields": [
+  {
+   "fieldname": "prize_pt_and_vc_section",
+   "fieldtype": "Section Break",
+   "label": "PRIZE PT & VC"
+  },
+  {
+   "fieldname": "prize_amount_pt",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Prize Amount (PT)",
+   "precision": "0"
+  },
+  {
+   "fieldname": "voucher_amount",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Voucher Amount",
+   "precision": "0"
+  },
+  {
+   "fieldname": "ticket_number",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Ticket Number"
+  },
+  {
+   "default": "Today",
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Date"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-09-24 15:35:55.509672",
+ "modified_by": "Administrator",
+ "module": "Fz Connect",
+ "name": "Prize PT VC",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

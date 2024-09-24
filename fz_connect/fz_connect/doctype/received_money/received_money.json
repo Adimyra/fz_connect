@@ -1,0 +1,97 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:PR-{date}-{##}",
+ "creation": "2024-09-22 00:22:59.846672",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "received_money_from_retailer_mahajan_section",
+  "date",
+  "payment_for_day",
+  "payment_for_the_date",
+  "time",
+  "column_break_wjof",
+  "mode_of_payment",
+  "received_total_amount",
+  "received_by"
+ ],
+ "fields": [
+  {
+   "fieldname": "received_money_from_retailer_mahajan_section",
+   "fieldtype": "Section Break",
+   "label": "Received Money From Retailer (Mahajan)"
+  },
+  {
+   "default": "Today",
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Date"
+  },
+  {
+   "fieldname": "payment_for_day",
+   "fieldtype": "Link",
+   "label": "Payment for The Day",
+   "options": "Daily Ticket Details"
+  },
+  {
+   "fetch_from": "payment_for_day.todays_date",
+   "fieldname": "payment_for_the_date",
+   "fieldtype": "Data",
+   "label": "Payment for The Date"
+  },
+  {
+   "fetch_from": "payment_for_day.time",
+   "fieldname": "time",
+   "fieldtype": "Data",
+   "label": "Time"
+  },
+  {
+   "fieldname": "column_break_wjof",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "mode_of_payment",
+   "fieldtype": "Select",
+   "label": "Mode of Payment",
+   "options": "\nCash\nOnline"
+  },
+  {
+   "fieldname": "received_total_amount",
+   "fieldtype": "Currency",
+   "label": "Received Total Amount",
+   "precision": "0"
+  },
+  {
+   "default": "Mahajan",
+   "fieldname": "received_by",
+   "fieldtype": "Data",
+   "label": "Received By"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-09-24 15:35:55.080990",
+ "modified_by": "Administrator",
+ "module": "Fz Connect",
+ "name": "Received Money",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

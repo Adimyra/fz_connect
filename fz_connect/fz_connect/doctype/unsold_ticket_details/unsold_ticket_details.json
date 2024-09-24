@@ -1,0 +1,53 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-09-21 23:53:15.566244",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "unsold_ticket_details_section",
+  "sem",
+  "no_of_unsold_ticket",
+  "image"
+ ],
+ "fields": [
+  {
+   "fieldname": "unsold_ticket_details_section",
+   "fieldtype": "Section Break",
+   "label": "Unsold Ticket Details"
+  },
+  {
+   "fieldname": "sem",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Sem",
+   "options": "\n10\n20\n25\n30\n50\n60"
+  },
+  {
+   "fieldname": "no_of_unsold_ticket",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "No of Unsold Ticket",
+   "precision": "0"
+  },
+  {
+   "fieldname": "image",
+   "fieldtype": "Attach",
+   "in_list_view": 1,
+   "label": "Image (Unsold)"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-09-24 15:35:55.668478",
+ "modified_by": "Administrator",
+ "module": "Fz Connect",
+ "name": "Unsold Ticket Details",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
